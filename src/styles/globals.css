@@ -11,6 +11,7 @@ body{
 .menu{
   text-align: right;
   background-color:yellow;
+
 }
 .menu li {
    display: inline;
@@ -27,3 +28,24 @@ body{
     text-shadow: 2px 2px 2px white;
 }
 
+.moblie-menu-btn{
+  position: absolute;
+  right:0;
+}
+.moblie-menu{
+   background-color:yellow;
+  height: 200px;
+    width: 150px;
+    display: inline-block;
+    line-height: 40px; 
+    list-style-type: none;
+    position: absolute;
+    top: 50px;
+    left: -150px;
+    transition: left 1s;
+    padding: 20px;
+}
+.moblie-menu > li{
+   letter-spacing: 5px;
+   font-weight: bold;
+}
