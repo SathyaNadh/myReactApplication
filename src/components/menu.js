@@ -40,10 +40,15 @@ export const Menu = () =>{
  const fnMoblieMenuBtnClick=()=>{
   setLeft(left === 0 ? -150 :0)
  }
+ const fnClose=()=>{
+  setLeft(-150)
+ }
   return (
     <div>
       {ismobliemenu && <button  onClick={fnMoblieMenuBtnClick} className='moblie-menu-btn'>menu</button>}
+  
     <ul style={{left:left}} className={ismobliemenu ? 'moblie-menu' :'menu'}>
+     <li><span onClick={fnClose} className='close-btn'>X</span></li> 
       <li>
         <Link  id='home' className={menuitem == 'home'&& 'active-menu'} onClick={fnClick}href="/home">Home</Link>
       </li>
